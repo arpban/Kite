@@ -1,0 +1,53 @@
+.site-header {
+  padding: 20px 0;
+
+  .wrapper-1400 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* logo */
+
+.site-branding__logo {
+  max-height: 70px;
+}
+
+/* navigation */
+
+nav.site-header-nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    li {
+      padding: 0;
+      margin: 0 15px;
+      display: block;
+
+      a {
+        font-size: 1.9rem;
+        color: $color-text;
+        font-weight: 700;
+        padding: 5px 0;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &.is-active {
+          border-bottom: 2px solid $color-text;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

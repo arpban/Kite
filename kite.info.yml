@@ -1,0 +1,16 @@
+name: Kite
+description: Drupal 8 theme for blogs
+type: theme
+core: 8.x
+libraries:
+  - kite/global-css
+  - kite/global-js
+  - kite/fonts
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer_branding: 'Footer Branding'
+  footer_section_1: 'Footer section 1'
+  footer_section_2: 'Footer section 2'
+  footer_section_3: 'Footer section 3'
+  footer_section_4: 'Footer section 4'

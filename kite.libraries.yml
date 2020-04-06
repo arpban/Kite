@@ -1,0 +1,15 @@
+global-css:
+  css:
+    theme:
+      built/css/main.css: {}
+
+global-js:
+  js:
+    built/js/main.js: {}
+  dependencies: 
+    - core/jquery
+
+fonts: 
+  css: 
+    theme: 
+      '//fonts.googleapis.com/css?family=Karla:400,400i,700&display=swap': { type: external, minified: true }
