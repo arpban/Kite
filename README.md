@@ -1,4 +1,5 @@
-# Kite – Drupal 8 Theme for Blogging
+# Kite
+Drupal 8 theme for blogging
 
 ## Development
 
