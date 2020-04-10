@@ -67,13 +67,44 @@ nav.site-header__nav {
         }
 
         &.is-active {
-          border-bottom: 2px solid $color-text;
+          border-bottom: 2px solid $color-primary;
+          color: $color-primary;
 
           &:hover {
             opacity: 1;
           }
         }
       }
+    }
+  }
+}
+
+/* Search */
+
+.site-header__search {
+  position: relative;
+  z-index: 1;
+
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 47px;
+    height: 47px;
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: #f3f3f3;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
     }
   }
 }

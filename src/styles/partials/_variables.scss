@@ -6,4 +6,6 @@ $font-primary: 'Karla', -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
 $color-text: #333333;
 $color-text-lighter: #525252;
 $color-text-lighter2: #969696;
-$color-links: blue;
+$color-primary: #ff4500;
+$color-primary-darker: #ec4000;
+$color-links: $color-primary;

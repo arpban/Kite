@@ -21,7 +21,6 @@ html {
 }
 
 body {
-  // overflow-x: hidden;
   font-size: 1.6rem;
   line-height: 1.6em;
   font-weight: 400;
@@ -29,10 +28,8 @@ body {
   letter-spacing: 0;
   text-rendering: optimizeLegibility;
   background: #fff;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: 'liga' on;
 }
 
 audio,
@@ -60,6 +57,10 @@ ol,
 dl,
 blockquote {
   margin: 0 0 1.5em 0;
+}
+
+p {
+  line-height: 1.6em;
 }
 
 ol,
@@ -152,7 +153,6 @@ h6 {
 h1 {
   margin: 0 0 0.5em 0;
   font-size: 5rem;
-  font-weight: 700;
 }
 @media (max-width: 500px) {
   h1 {
@@ -162,7 +162,7 @@ h1 {
 
 h2 {
   margin: 1.5em 0 0.5em 0;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   h2 {
@@ -172,8 +172,7 @@ h2 {
 
 h3 {
   margin: 1.5em 0 0.5em 0;
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 2.4rem;
 }
 @media (max-width: 500px) {
   h3 {
@@ -184,19 +183,16 @@ h3 {
 h4 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1.6rem;
-  font-weight: 500;
 }
 
 h5 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1.4rem;
-  font-weight: 500;
 }
 
 h6 {
   margin: 1.5em 0 0.5em 0;
   font-size: 1.4rem;
-  font-weight: 500;
 }
 
 a {
@@ -324,5 +320,99 @@ td {
 @media (max-width: 700px) {
   .wrapper-800 {
     padding: 0 20px;
+  }
+}
+
+/* Forms
+/* ---------------------------------------------- */
+
+.form-item {
+  label {
+    display: block;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0 0 5px;
+  }
+}
+
+input.form-text,
+input.form-search {
+  border: 2px solid #dcdcdc;
+  background: #ffffff;
+  padding: 10px;
+  font-size: 1.6rem;
+  border-radius: 6px;
+
+  &:focus {
+    border-color: $color-primary;
+  }
+}
+
+/* Buttons
+/* ---------------------------------------------- */
+
+.button {
+  border: 2px solid $color-primary;
+  border-radius: 6px;
+  padding: 10px;
+  color: $color-primary;
+  font-size: 1.6rem;
+  background: #ffffff;
+  outline: none;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  &:hover {
+    border-color: $color-primary-darker;
+    color: $color-primary-darker;
+  }
+}
+
+.button--primary {
+  border-color: $color-primary;
+  background: $color-primary;
+  color: #ffffff;
+
+  &:hover {
+    border-color: $color-primary-darker;
+    background: $color-primary-darker;
+    color: #ffffff;
+  }
+}
+
+/* Node
+/* ---------------------------------------------- */
+
+.page-title {
+  text-align: center;
+}
+
+.node__meta {
+  text-align: center;
+  color: $color-text-lighter;
+  margin: 0 auto 30px;
+  font-size: 1.6rem;
+}
+
+.node__content {
+  font-size: 1.8rem;
+  color: $color-text-lighter;
+
+  img {
+    height: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
+    color: $color-text;
+  }
+
+  .field--type-image {
+    margin: 0 auto 30px;
   }
 }

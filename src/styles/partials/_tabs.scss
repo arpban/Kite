@@ -1,0 +1,32 @@
+/* Tabs
+/* ---------------------------------------------- */
+
+nav.tabs {
+  border-bottom: 2px solid #f7f7f7;
+  margin: 0 auto 30px;
+
+  ul.tabs {
+    margin: 0;
+  }
+
+  .tabs > li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabs a {
+    padding: 7px 10px;
+    color: $color-text-lighter;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .tabs a.is-active {
+    background-color: #f7f7f7;
+    border-bottom: 2px solid;
+    color: $color-primary;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: -2px;
+  }
+}

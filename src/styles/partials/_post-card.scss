@@ -19,10 +19,6 @@
   }
 }
 
-.post-card {
-  // width: 50%;
-}
-
 .post-card__wrapper {
   color: $color-text;
   display: block;
@@ -96,14 +92,28 @@
     padding: 0;
     margin: 0;
     line-height: 1.4em;
+    font-size: 1.8rem;
+    font-weight: normal;
   }
 }
 
 .post-card__tags {
   display: flex;
   margin-top: 10px;
+}
 
-  a {
+.field--name-field-tags {
+  .field__label {
+    display: none;
+  }
+
+  .field__items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .field__item a {
     font-size: 1.3rem;
     color: #3c3b3b;
     border: 1px solid #616161;
@@ -113,9 +123,9 @@
     display: block;
 
     &:hover {
-      background: #3c3b3b;
+      background: $color-primary;
       color: white;
-      border-color: #3c3b3b;
+      border-color: $color-primary;
     }
   }
 }
