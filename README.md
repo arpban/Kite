@@ -1,7 +1,7 @@
 # Kite
 Drupal 8 theme for blogging
 
-<img src="screenshot.png" alt="screenshot"  />
+<img src="screenshot.png" alt="screenshot" style="border: 1px solid #eeeeee;"  />
 
 ## Development
 
