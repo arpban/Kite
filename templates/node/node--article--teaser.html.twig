@@ -70,7 +70,8 @@
  *   in different view modes.
  */
 #}
-<article class="post-card" {{ attributes }}>
+{% set classes = ['post-card'] %}
+<article{{ attributes.addClass(classes) }}>
   <div class="post-card__wrapper">
     <div class="post-card__feature-image">
       {{ content.field_image }}
@@ -82,9 +83,11 @@
       <div class="post-card__date">{{clean_date}}</div>
     </div>
 
-    <h2 class="post-card__title">
-      <a href={{url}}>{{label}}</a>
+    {{title_prefix}}
+    <h2 class="post-card__title" {{title_attributes}}>
+      <a href={{url}} rel="bookmark">{{label}}</a>
     </h2>
+    {{title_suffix}}
 
     <div class="post-card__excerpt">{{content.body}}</div>
 

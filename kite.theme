@@ -3,12 +3,15 @@
 use Drupal\node\NodeInterface;
 
 function kite_preprocess_node__article__teaser(&$variables){
-    if (!empty($variables['node']) && ($variables['node'] instanceof NodeInterface)) {
-        $node_created_ts = $variables['node']->getCreatedTime();
-        $date_formatter  = \Drupal::service('date.formatter');
-    
-        $variables['date_time']  = $date_formatter->format($node_created_ts, 'custom', 'Y-m-d H:i:s');
-        $variables['clean_date'] = $date_formatter->format($node_created_ts, 'custom', 'M j, Y');
-    }
+  if (!empty($variables['node']) && ($variables['node'] instanceof NodeInterface)) {
+    $node_created_ts = $variables['node']->getCreatedTime();
+    $date_formatter  = \Drupal::service('date.formatter');
+
+    $variables['date_time']  = $date_formatter->format($node_created_ts, 'custom', 'Y-m-d H:i:s');
+    $variables['clean_date'] = $date_formatter->format($node_created_ts, 'custom', 'M j, Y');
+  }
 }
 
+function kite_preprocess_block(&$variables) {
+  //dpm($variables);
+}
